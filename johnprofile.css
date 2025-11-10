@@ -1,0 +1,120 @@
+* {
+         margin: 0;
+         padding: 0; 
+         box-sizing: border-box; 
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    body { 
+        background: #fefcfc; 
+        color: #121212; 
+        scroll-behavior: smooth; 
+    }
+    nav { 
+        /* position: fixed; 
+        top: 0; width: 100%; 
+        background: transparent; 
+        padding: 15px; 
+        text-align: center; 
+        z-index: 100; */
+    
+        height: 75vh;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        position: fixed;
+        right: 10px;
+        top: 100px;
+        background-color: transparent; 
+        font:rgb(148, 144, 144);
+    }
+    
+    nav a { 
+        color: #ed0505; 
+        text-decoration: none; 
+        margin: 0 15px; 
+        font-weight: 900; 
+        transition: color 0.3s; 
+        gap: 300px;
+    }
+    nav a:hover { 
+        color: #f90f03; 
+    }
+    header { 
+        height: 100vh; 
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("pexels-alexander-kagan-2154133501-34491460 (1).jpg") center/cover no-repeat; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+        color: #e71313; 
+    }
+    header h1 { 
+        font-size: 3rem; 
+        margin-bottom: 10px;
+     }
+    header p { 
+        font-size: 1.3rem;
+         color: #ece9e9;
+         }
+    section { 
+        padding: 80px 20px;
+         max-width: 1100px; 
+         margin: auto; 
+        }
+    h2 { 
+        text-align: center; 
+        font-size: 2.5rem; 
+        margin-bottom: 40px; 
+        position: relative;
+     }
+    h2::after { 
+        content: ""; 
+        width: 160px; 
+        height: 3px; 
+        background: #f9420b; 
+        display: block; 
+        margin: 10px auto; 
+    }
+    .skills, .projects, .education { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 30px; 
+    }
+    
+    footer { 
+        background: #222; 
+        color: #fff; 
+        text-align: center; 
+        padding: 20px; 
+        margin-top: 40px; 
+    }
+    .contact a { 
+        color: #f53c03; 
+        text-decoration: none; }
+    @media(max-width: 768px) {
+      header h1 { font-size: 2.2rem; 
+    }
+      nav { 
+        font-size: .9rem; }
+    }
+    body.dark { 
+        background: #111; 
+        color: #fff; 
+    }
+body.dark .card { 
+    background: #222; 
+    color: #fff; 
+}
+body.dark nav { 
+    background: rgba(255,255,255,0.1);
+ }
+body.dark a { 
+    color: #ff4d00; }
+#certifications 
+.card {
+  background: #e8f5e9;   /* light green background */
+  border-left: 5px solid #4caf50; /* green bar on side */
+  font-weight: 600;
+}
